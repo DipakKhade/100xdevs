@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "author": "",
+<<<<<<< HEAD
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.21",
@@ -15,4 +16,7 @@
     "express": "^4.19.2",
     "ws": "^8.16.0"
   }
+=======
+  "license": "ISC"
+>>>>>>> 57ba1cb4818aac5e407bf35f35c60c91b0f34294
 }
