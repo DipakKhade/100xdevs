@@ -1,4 +1,7 @@
 # Node.js dependencies
+# Ignore node_modules in all subdirectories
+**/node_modules/
+
 /node_modules
 
 # Generated files
