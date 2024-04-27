@@ -1,1 +1,24 @@
-dist
+# Node.js dependencies
+/node_modules
+
+# Generated files
+/build
+/dist
+
+# Environment variables
+.env
+
+# IDE files
+.vscode
+.idea
+
+# Logs
+/logs
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency lock files
+package-lock.json
+yarn.lock
