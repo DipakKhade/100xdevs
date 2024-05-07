@@ -1,9 +1,13 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // import { games } from "./store"
-const logger_1 = require("./logger");
-const store_1 = require("./store");
-(0, logger_1.startLogger)();
+// import { startLogger } from "./logger"
+// import { GameManger } from "./store"
+Object.defineProperty(exports, "__esModule", { value: true });
+const PubSubManger_1 = require("./redis+pubsub/PubSubManger");
+// startLogger()
+// setInterval(()=>{
+//     GameManger.getInstance().addgame(Math.random().toString())
+// },5000)
 setInterval(() => {
-    store_1.GameManger.getInstance().addgame(Math.random().toString());
+    PubSubManger_1.PubSubManager.getInstance().userUnSubscribe(Math.random().toString(), "APPLE");
 }, 5000);

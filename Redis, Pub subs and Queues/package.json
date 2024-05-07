@@ -1,6 +1,6 @@
 {
-  "description": "",
   "dependencies": {
+    "@types/redis": "^4.0.11",
     "redis": "^4.6.13"
   }
 }
