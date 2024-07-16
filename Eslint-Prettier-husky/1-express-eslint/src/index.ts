@@ -8,3 +8,7 @@ app.get('/',function(req,res){
                success:true
     })
 })
+
+app.listen(3000,function(){
+    console.log('server is up')
+})

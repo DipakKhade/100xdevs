@@ -8,3 +8,12 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
 ];
+
+
+//.vscode/settings.json
+// {
+//   "editor.codeActionsOnSave": {
+//       "source.fixAll.eslint": "explicit"
+//   },
+//   "eslint.validate": ["javascript", "typescript"]
+// }
