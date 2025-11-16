@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-express
+  labels:
+    app: backend
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend 
+    spec:
+      containers:
+      - name: backend-k8s-container
+        image: dipakkhade/express-app-kubernetes
+        ports:
+        - containerPort: 3000
+
