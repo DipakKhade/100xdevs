@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-container
+        image: dipakkhade/docker-express
+        volumeMounts:
+        - name: secrets
+          mountPath: /etc/secrets
+          subPath: id_rsa
+      volumes:
+      - name: secrets
+        secret:
+          secretName: dotfile-secret
+
